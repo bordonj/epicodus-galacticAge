@@ -7,7 +7,7 @@ let mercury;
     mercury = new Mercury(30)
   })
 
-  test('should correctly create a mercury object using an age, and years left to live based on life expectancy', () => {
+  test('should correctly create a mercury object using an age', () => {
     expect(mercury.age).toEqual(7.2)
   })
 })

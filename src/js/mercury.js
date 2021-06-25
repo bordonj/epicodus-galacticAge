@@ -4,8 +4,8 @@
 //- Mercury year is .24 Earth years
 
 export default class Mercury {
-  constructor() {
-
+  constructor(age) {
+    this.age = parseFloat((age * .24).toFixed(1));
   }
 }
 

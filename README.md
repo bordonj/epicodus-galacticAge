@@ -19,7 +19,8 @@
 
 
 ## Description
-
+* This application can take a person's age in Earth years, and then transform it into an age for a respective planet (i.e., Mercury, Venus, Mars, Jupiter)
+* It can also determine how many years a user has left to live on each planet based on their life expectancy on Earth
 ## Setup/Installation Requirements
 * Clone this project into your preferred directory
 * In that directory, there should now be a directory labeled "repoName"

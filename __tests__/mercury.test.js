@@ -1,14 +1,18 @@
 import Mercury from "../src/js/mercury";
 
 describe ('Mercury', () => {
-let mercury;
+  let mercury;
 
   beforeEach(() => {
     mercury = new Mercury(30)
   })
 
-  test('should correctly create a mercury object using an age', () => {
-    expect(mercury.age).toEqual(7.2)
+  test('should correctly create a mercury object and its converted age', () => {
+    console.log('mercury class', mercury);
+    expect(mercury.mercuryAge).toEqual(7.2)
+  })
+  test('in mercury object, should have original earth age', () => {
+    expect(mercury.earthAge).toEqual(30);
   })
 })
 // - Mercury year is .24 Earth years

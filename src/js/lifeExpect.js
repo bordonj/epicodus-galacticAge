@@ -44,5 +44,6 @@ export default class LifeExpect {
       avgLifeExpect -= 8;
     }
     this.lifeExpectYears = avgLifeExpect;
+    this.yearsLeft = parseFloat((avgLifeExpect - age).toFixed(1));
   }
 }

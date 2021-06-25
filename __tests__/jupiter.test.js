@@ -9,4 +9,7 @@ describe('Jupiter', () => {
   test('should create jupiter object and its converted age', () => {
     expect(jupiter.jupiterAge).toEqual(355.8)
   })
+  test('in jupiter object, should have original earth age', () => {
+    expect(jupiter.earthAge).toEqual(30);
+  })
 })

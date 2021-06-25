@@ -11,5 +11,9 @@ describe('Life Expect', () => {
     console.log('lifeExpect', lifeExpect);
     expect(lifeExpect.lifeExpectYears).toEqual(90.6);
   })
+  test('lifeExpect object should contain variable that calulates how many years user has left to live', () => {
+    console.log('yearsLeft', yearsLeft);
+    expect(lifeExpect.yearsLeft).toEqual(60.6);
+  })
   
 })

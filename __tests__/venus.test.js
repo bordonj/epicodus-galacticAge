@@ -11,4 +11,7 @@ describe('Venus', () => {
     console.log('venus class', venus);
     expect(venus.venusAge).toEqual(18.6);
   })
+  test('in venus object, should have original earthAge', () => {
+    expect(venus.earthAge).toEqual(30);
+  })
 })

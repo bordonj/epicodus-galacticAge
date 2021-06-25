@@ -43,7 +43,7 @@ export default class LifeExpect {
     if (diseases) {
       avgLifeExpect -= 8;
     }
-    this.lifeExpectYears = avgLifeExpect;
+    this.lifeExpectYears = parseFloat((avgLifeExpect).toFixed(1));
     this.yearsLeft = parseFloat((avgLifeExpect - age).toFixed(1));
   }
 }

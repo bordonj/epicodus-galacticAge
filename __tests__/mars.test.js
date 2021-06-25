@@ -10,4 +10,7 @@ describe('Mars', () => {
     console.log('mars object', mars);
     expect(mars.marsAge).toEqual(56.4);
   })
+  test('in mars object, should have original earth age', () => {
+    expect(mars.earthAge).toEqual(30);
+  })
 })

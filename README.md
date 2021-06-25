@@ -20,6 +20,10 @@
 
 ## Description
 * This application can take a person's age in Earth years, and then transform it into an age for a respective planet (i.e., Mercury, Venus, Mars, Jupiter)
+  - Mercury year is .24 Earth years
+  - Venus year is .62 Earth years
+  - Mars year is 1.88 Earth years
+  - Jupiter year is 11.86 Earth years
 * It can also determine how many years a user has left to live on each planet based on their life expectancy on Earth
 ## Setup/Installation Requirements
 * Clone this project into your preferred directory

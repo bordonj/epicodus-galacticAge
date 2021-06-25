@@ -1,3 +1,22 @@
+import Mercury from "../src/js/mercury";
+
+describe ('Mercury', () => {
+let mercury;
+
+  beforeEach(() => {
+    mercury = new Mercury(30)
+  })
+
+  test('should correctly create a mercury object using an age, and years left to live based on life expectancy', () => {
+    expect(mercury.age).toEqual(7.2)
+  })
+})
+// - Mercury year is .24 Earth years
+// - Venus year is .62 Earth years
+// - Mars year is 1.88 Earth years
+// - Jupiter year is 11.86 Earth years
+
+
 // import Triangle from './../src/triangle.js';
 
 // describe('Triangle', () => {

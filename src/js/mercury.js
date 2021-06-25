@@ -5,7 +5,8 @@
 
 export default class Mercury {
   constructor(age) {
-    this.age = parseFloat((age * .24).toFixed(1));
+    this.mercuryAge = parseFloat((age * .24).toFixed(1));
+    this.earthAge = age;
   }
 }
 

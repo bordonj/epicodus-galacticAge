@@ -1,25 +1,34 @@
-# (Application Name)
+# _Super Galactic Age Calculator_
 
-#### (Brief Description of Application)
+#### _Super Galactic Age Calculator- 06/25/21 - Code Review005_
 
-#### By (Your Name Here)
+#### By _**Jennifer Bordon**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _Git_
+* _HTML_
+* _CSS_ 
+* _Bootstrap_
+* _jQuery_
+* _JavaScript_
+* _npm_
+* _webpack_
+* _Jest_
+* _ESLint_
+
 
 ## Description
 
 ## Setup/Installation Requirements
-* after cloning repo run `npm i`
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this project into your preferred directory
+* In that directory, there should now be a directory labeled "repoName"
+* run `npm i` to install respective plugins/packages
+* run `npm start` to go see a live server of the app
+
+## Github Pages link
+
+[Click here](https://github.com/bordonj/epicodus-galacticAge) for the Github Pages link. 
 
 ## Known Bugs
 
@@ -28,4 +37,8 @@
 
 ## License
 
+Distributed under the MIT License. See LICENSE for more information.
+
 ## Contact Information
+
+_jennifer.bordon@gmail.com_

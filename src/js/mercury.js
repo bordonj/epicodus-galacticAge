@@ -9,7 +9,7 @@ export default class Mercury {
     this.earthAge = age;
   }
   mercuryLifeExpect(yearsLeft) {
-
+    this.mercuryYearsLeft = parseFloat((yearsLeft * .24).toFixed(1));
   }
 }
 

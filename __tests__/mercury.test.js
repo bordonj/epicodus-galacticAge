@@ -10,7 +10,7 @@ describe ('Mercury', () => {
 
   test('should correctly create a mercury object and its converted age', () => {
     console.log('mercury class', mercury);
-    expect(mercury.mercuryAge).toEqual(7.2)
+    expect(mercury.mercuryAge).toBeCloseTo(125)
   })
   test('in mercury object, should have original earth age', () => {
     expect(mercury.earthAge).toEqual(30);
@@ -21,7 +21,7 @@ describe ('Mercury', () => {
     console.log('newMercury object', newMercury);
     newMercury.mercuryLifeExpect(lifeExpect.yearsLeft);
     console.log('newMercury object', newMercury);
-    expect(newMercury.mercuryYearsLeft).toBeCloseTo(14.5);
+    expect(newMercury.mercuryYearsLeft).toBeCloseTo(252.5);
   })
 
 })

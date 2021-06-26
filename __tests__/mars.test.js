@@ -9,7 +9,7 @@ describe('Mars', () => {
   })
   test('should correctly create a mars object and its converted age', () => {
     console.log('mars object', mars);
-    expect(mars.marsAge).toEqual(56.4);
+    expect(mars.marsAge).toBeCloseTo(16);
   })
   test('in mars object, should have original earth age', () => {
     expect(mars.earthAge).toEqual(30);
@@ -18,7 +18,7 @@ describe('Mars', () => {
     let lifeExpect = new LifeExpect('female', 30, 16.8, 2, false, false, 1, 6, false);
     let newMars = new Mars(30);
     newMars.marsLifeExpect(lifeExpect.yearsLeft);
-    expect(newMars.marsYearsLeft).toBeCloseTo(113.9);
+    expect(newMars.marsYearsLeft).toBeCloseTo(32.2);
 
 
   })

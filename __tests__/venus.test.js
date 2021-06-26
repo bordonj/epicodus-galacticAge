@@ -10,7 +10,7 @@ describe('Venus', () => {
 
   test('should correctly create a venus object and its converted age', () => {
     console.log('venus class', venus);
-    expect(venus.venusAge).toEqual(18.6);
+    expect(venus.venusAge).toBeCloseTo(48.4);
   })
   test('in venus object, should have original earthAge', () => {
     expect(venus.earthAge).toEqual(30);
@@ -19,6 +19,6 @@ describe('Venus', () => {
     let lifeExpect = new LifeExpect('female', 30, 16.8, 2, false, false, 1, 6, false);
     let newVenus = new Venus(30);
     newVenus.venusLifeExpect(lifeExpect.yearsLeft);
-    expect(newVenus.venusYearsLeft).toBeCloseTo(37.6);
+    expect(newVenus.venusYearsLeft).toBeCloseTo(97.7);
   })
 })

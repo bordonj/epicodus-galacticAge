@@ -46,4 +46,11 @@ export default class LifeExpect {
     this.lifeExpectYears = parseFloat((avgLifeExpect).toFixed(1));
     this.yearsLeft = parseFloat((avgLifeExpect - age).toFixed(1));
   }
+  checkSurpassedLifeExpec() {
+    if (this.yearsLeft < 0) {
+      this.surpassedYears = Math.abs(this.yearsLeft);
+    } else {
+      this.surpassedYears = 0;
+    }
+  }
 }

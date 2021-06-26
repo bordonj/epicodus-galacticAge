@@ -27,5 +27,16 @@ describe('Life Expect', () => {
     console.log('yearsLeft', lifeExpect.yearsLeft);
     expect(lifeExpect.lifeExpectYears).toBeLessThan(50);
   })
-  
+  test('lifeExpect object should return number of 0 if user age is not passed life expectancy', () => {
+    let lifeExpect = new LifeExpect('male', 30, 45, 1, true, true, 0, 1, true);
+    lifeExpect.checkSurpassedLifeExpec();
+    console.log('lifeExpect obj', lifeExpect);
+    expect(lifeExpect.surpassedYears).toEqual(0);
+  })
+  test('lifeExpect object should return number of years for user who surpassed life expectancy', () => {
+    let lifeExpect = new LifeExpect('male', 60, 45, 0, true, true, 0, 1, true);
+    lifeExpect.checkSurpassedLifeExpec();
+    console.log('lifeExpect obj', lifeExpect);
+    expect(lifeExpect.surpassedYears).toBeGreaterThanOrEqual(0);
+  })
 })

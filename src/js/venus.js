@@ -4,4 +4,7 @@ export default class Venus {
     this.venusAge = parseFloat((age * .62).toFixed(1));
     this.earthAge = age;
   }
+  venusLifeExpect() {
+    
+  }
 }

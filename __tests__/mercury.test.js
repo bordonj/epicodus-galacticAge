@@ -1,3 +1,4 @@
+import LifeExpect from "../src/js/lifeExpect";
 import Mercury from "../src/js/mercury";
 
 describe ('Mercury', () => {
@@ -14,6 +15,13 @@ describe ('Mercury', () => {
   test('in mercury object, should have original earth age', () => {
     expect(mercury.earthAge).toEqual(30);
   })
+  test('in mercury object, should calculate expected years left to live on mercury', () => {
+    let lifeExpect = new LifeExpect('female', 30, 16.8, 2, false, false, 1, 6, false);
+    let newMercury = new Mercury(30);
+    newMercury.mercuryLifeExpect(lifeExpect.yearsLeft);
+    expect(newMercury.mercuryYearsLeft).toBeCloseTo(14.5);
+  })
+
 })
 // - Mercury year is .24 Earth years
 // - Venus year is .62 Earth years

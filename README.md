@@ -30,6 +30,7 @@
 * In that directory, there should now be a directory labeled "repoName"
 * run `npm i` to install respective plugins/packages
 * run `npm start` to go see a live server of the app
+* run `npm test` to see the different tests that calculate user's age and life expectancy, respective of planet
 
 ## Github Pages link
 

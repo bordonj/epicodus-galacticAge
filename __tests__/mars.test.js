@@ -8,7 +8,6 @@ describe('Mars', () => {
     mars = new Mars(30);
   })
   test('should correctly create a mars object and its converted age', () => {
-    console.log('mars object', mars);
     expect(mars.marsAge).toBeCloseTo(16);
   })
   test('in mars object, should have original earth age', () => {

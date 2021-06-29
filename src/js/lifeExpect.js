@@ -6,7 +6,6 @@ export default class LifeExpect {
       if (bmi >= 40) {
         avgLifeExpect -= 5;
       }
-      console.log('gender female', avgLifeExpect);
     } else if (sex ==='male') {
       avgLifeExpect += 3;
       if (bmi >= 40) {
@@ -21,6 +20,7 @@ export default class LifeExpect {
     if (bmi < 18) {
       avgLifeExpect -= 2;
     }
+    /* istanbul ignore else */
     if (activityLvl === 0) {
       avgLifeExpect -= 5;
     } else if (activityLvl === 1) {
@@ -29,7 +29,7 @@ export default class LifeExpect {
       avgLifeExpect += 2;
     }
     if (drinkAlc) {
-      avgLifeExpect -= 5
+      avgLifeExpect -= 5;
     }
     if (smoke) {
       avgLifeExpect -= 10;

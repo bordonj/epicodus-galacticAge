@@ -15,10 +15,8 @@ describe('Jupiter', () => {
   })
   test('in jupiter object, should calculate expected years to live on jupiter', () => {
     let lifeExpect = new LifeExpect('female', 30, 16.8, 2, false, false, 1, 6, false);
-    console.log ('lifeExpect object', lifeExpect);
     let newJupiter = new Jupiter(30);
     newJupiter.jupiterLifeExpect(lifeExpect.yearsLeft);
-    console.log('newJupiter object', newJupiter);
     expect(newJupiter.jupiterYearsLeft).toBeCloseTo(5.1)
   })
 })

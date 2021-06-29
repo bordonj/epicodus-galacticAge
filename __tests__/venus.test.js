@@ -9,7 +9,6 @@ describe('Venus', () => {
   })
 
   test('should correctly create a venus object and its converted age', () => {
-    console.log('venus class', venus);
     expect(venus.venusAge).toBeCloseTo(48.4);
   })
   test('in venus object, should have original earthAge', () => {

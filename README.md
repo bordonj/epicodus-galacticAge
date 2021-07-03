@@ -32,9 +32,6 @@
 * run `npm start` to go see a live server of the app
 * run `npm test` to see the different tests that calculate user's age and life expectancy, respective of planet
 
-## Github Pages link
-
-[Click here](https://github.com/bordonj/epicodus-galacticAge) for the Github Pages link. 
 ## Notes
 * This app referenced [Girlstart](http://girlstart.org/wp-content/uploads/2017/07/13.Age-on-Planets.pdf) which provided a basic formula to calculate a planet's age based on their Earth age
 * The calculation of life expectancy was arbitrarily created using little research, thus please take it with your own discretion and look at real resources if you'd like a more accurate estimate

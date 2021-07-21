@@ -10,24 +10,33 @@ import LifeExpect from './js/lifeExpect';
 $(document).ready(function() {
   $('#demo').submit(function(event) {
     event.preventDefault();
-    const age = $('#age').val();
-    const sex = $('#sex').val();
-    const bmi = parseFloat($('#bmi').val());
-    const actLvl = parseFloat($('#actLvl').val());
-    const smoke = $('#smoke').val();
-    const drink = $('#drink').val();
-    const wealth = $('#wealth').val();
-    const education = parseFloat($('#education').val());
-    const disease = $('#diseases').val();
+    let age = $('#age').val();
+    let sex = $('#sex').val();
+    let bmi = parseFloat($('#bmi').val());
+    let actLvl = parseFloat($('#actLvl').val());
+    let smoke = $('#smoke').val();
+    let drink = $('#drink').val();
+    let wealth = $('#wealth').val();
+    let education = parseFloat($('#education').val());
+    let disease = $('#diseases').val();
     let arg = [];
     arg.push(sex, age, bmi, actLvl, drink, smoke, wealth, education, disease);
-    for (let i = 0; i < arg.length; i++) {
-      arg[i] === 'false' ? 
-        arg[i] = false :
-        arg[i] === 'true' ?
-          arg[i] = true :
-          null;
+    // for (let i = 0; i < arg.length; i++) {
+    //   arg[i] === 'false' ? 
+    //     arg[i] = false :
+    //     arg[i] === 'true' ?
+    //       arg[i] = true :
+    //       null;
+    // }
+    console.log('before loop', arg);
+    for (let el of arg) {
+      if (el ==='false') {
+        el = false;
+      } else if (el === 'true') {
+        el = true;
+      }
     }
+    console.log('arg arr', arg);
     
     $('#age').val("");
     $('#sex').val("");

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <title>Super Galactic Age</title>
+</head>
+<body>
+
+  <div class='container'>
+    <div class='content'>
+      <div class='row'>
+        <div class='col-md-3'>
+          <h3>Demographics:</h3>
+          <form id="demo">
+            <label for="sex">Enter your sex:</label>
+            <input class id="sex" type="text" required>
+            <label for="age">Enter your age:</label>
+            <input class id="age" type="number" required>
+            <label for="bmi">Enter your BMI:</label>
+            <input class id="bmi" type="number" required>
+            <select id='actLvl'>
+              <option value='actLvls' disabled selected required>What's your activite levels?</option>
+              <option value='0'>No activities.</option>
+              <option value='1'>1-2 times exercising a week.</option>
+              <option value='2'>3-4 times exercising a week.</option>
+              <option value='3'>Exercising rigorously daily.</option>
+            </select>
+            <select id='smoke'>
+              <option value='smokeStatus' disabled selected>Do you Smoke?</option>
+              <option value='true'>Yes</option>
+              <option value='false'>No</option>
+            </select>
+            <select id='drink'>
+              <option value='drinkStatus' disabled selected>Do you Drink?</option>
+              <option value='true'>Yes</option>
+              <option value='false'>No</option>
+            </select>
+            <select id='wealth'>
+              <option value='wealthStatus' disabled selected>Are you wealthy?</option>
+              <option value='true'>Yes</option>
+              <option value='false'>No</option>
+            </select>
+            <select id='education'>
+              <option value='educationStatus' disabled selected>What's your highest education?</option>
+              <option value='1'>Elementary or less</option>
+              <option value='2'>Middle School</option>
+              <option value='3'>High School</option>
+              <option value='4'>College</option>
+              <option value='5'>Master's</option>
+              <option value='6'>Doctorates</option>
+            </select>
+            <select id='diseases'>
+              <option value='diseaseStatus' disabled selected>Do you have any diseases</option>
+              <option value='true'>Yes</option>
+              <option value='false'>No</option>
+            </select>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+        <div class='col-md-'>
+          <div class='output'>
+            <ul id="response"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+</body>
+</html>
